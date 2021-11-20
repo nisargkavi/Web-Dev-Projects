@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0;
+    display:flex;
+    background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%));
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.container{
+    display:flex;
+    padding: 24px 16px;
+    border-radius: 30px;
+    width:90vw;
+    letter-spacing: 1px;
+    background-image: linear-gradient(90deg , rgba(1, 1, 2, 0.554) , rgba(3, 3, 3, 0.356));
+}
+
+.panel{
+    background-position: center;
+    height:80vh;
+    border-radius: 30px;
+    flex:0.5;
+    position:relative;
+    transition: flex 0.5s ease-in;
+    color:#fff;
+    cursor:pointer;
+    margin: 15px;
+}
+
+.panel h3{
+    position:absolute;
+    bottom:20px;
+    background-image: none;
+    left:20px;
+    opacity:0;
+}
+
+.panel h2{
+    position: absolute;
+    top: 8px;
+    color: black;
+    font-size: 22px;
+    background-image: none;
+    left: 20px;
+    opacity: 0;    
+}
+
+.panel.active{
+    flex:10;
+}
+
+.panel.active h2{
+    opacity:1;
+    transition: opacity 0.6s ease-in 0.6s;
+}
+
+.panel.active h3{
+    opacity:1;
+    transition: opacity 0.6s ease-in 0.6s;
+}
+
+#white{
+    color: white;
+}
+
+footer{
+    color: white;
+    padding: 6px;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+}
+
+@media only screen and (max-width:480px){
+    .container{
+        width:100vw;
+    }
+}
