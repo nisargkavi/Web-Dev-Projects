@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  /* box-sizing: border-box; */
+  background-image: linear-gradient(
+      45deg,
+      rgba(187, 187, 187, 0.04) 0%,
+      rgba(187, 187, 187, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(166, 166, 166, 0.04) 0%,
+      rgba(166, 166, 166, 0.04) 50%,
+      rgba(92, 92, 92, 0.04) 50%,
+      rgba(92, 92, 92, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+  background-size: 142px 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #222;
+  cursor: pointer;
+  box-shadow: inset -5px -5px 8px #0000008a, inset 5px 5px 8px#ffffff0f;
+}
+
+li:hover {
+  font-size: 22px;
+  background-image: linear-gradient(
+      135deg,
+      rgba(234, 234, 234, 0.06) 0%,
+      rgba(234, 234, 234, 0.06) 50%,
+      rgba(169, 169, 169, 0.06) 50%,
+      rgba(169, 169, 169, 0.06) 100%
+    ),
+    linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+  background-size: 72px 72px;
+  /* background-color: rgba(250, 1, 1, 0.459); */
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  li {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  li {
+    width: 200px;
+  }
+}
