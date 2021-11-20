@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" type="image/x-icon">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body oncontextmenu="return false">
+
+    <div class="main">
+        <div class="header">
+            <div class="iconhead">
+                <img src="https://img.icons8.com/color/144/000000/youtube-play.png" class="ytic" />
+                <span>Video player</span>
+            </div>
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder=" Enter Video URL" id="url" onclick="border()">
+                <div class="btn">
+                    <button onclick="play()" class="btn btn-outline-secondary" type="button">Play</button>
+                    <button class="btn btn-danger" type="button" onclick="history.go(0)">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-player">
+            <iframe width="560" height="315" id="iframe" title="YouTube Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; download" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+              <p>© Copyright Nisarg 2021.</p>
+              <p>Design by <a class="effect-shine">Nisarg AKA [DrChamp]</a></p>	         	
+           </div>		                  
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>

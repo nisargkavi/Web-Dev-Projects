@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+span {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.main {
+    width: 550px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ytic {
+    width: 110px;
+    height: 100px;
+    display: inline;
+}
+
+input[type=text] {
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #1c62b9;
+}
+
+input[type=text]:hover {
+    box-shadow: inset 0px 0px 0px 2px blue;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+button:hover {
+    font-weight: bolder;
+    border: none;
+    color: rgb(255, 255, 255);
+    /* background-image: radial-gradient(circle at center center, rgb(71, 71, 71), rgb(8, 8, 8)); */
+    background: rgba(245, 12, 12, 0.829);
+    box-shadow: 0px 0px 33px -1px red;
+}
+
+img {
+    height: 45px;
+    width: 40px;
+}
+
+footer{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+}
+
+@media (max-width:768px) {
+    .header {
+        margin-top: 300px;
+    }
+    .input[type=text] {
+        width: 300px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    footer{
+        font-style: 15px;
+        right: -4%;
+        bottom: -136px;
+    }
+}
+
+@media (max-width:500px) {
+    .header {
+        margin-top: 300px;
+        margin-left: 70px;
+    }
+    input[type=text] {
+        width: 300px;
+    }
+    span {
+        font-size: 30px;
+    }
+    .ytic {
+        width: 75px;
+        height: 70px;
+    }
+    footer{
+        font-style: 15px;
+        right: -17%;
+        bottom: -128px;
+    }
+}
+
+@media (max-width:400px) {
+    .header {
+        margin-top: 300px;
+        margin-left: 100px;
+    }
+    input[type=text] {
+        width: 300px;
+    }
+    footer{
+        font-style: 15px;
+        right: -37%;
+        bottom: -203px;
+    }
+}
+
+@media (max-width:300px) {
+    .header {
+        margin-top: 300px;
+        margin-left: 150px;
+    }
+    input[type=text] {
+        width: 300px;
+    }
+    footer{
+        font-style: 15px;
+        right: -37%;
+        bottom: -210px;
+    }
+}
+
+.iconhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
