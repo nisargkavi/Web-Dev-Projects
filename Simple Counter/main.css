@@ -1,0 +1,166 @@
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        body{
+            background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container{
+            /* background: white; */
+            height: 350px;
+            /* background-image: linear-gradient(-160deg , rgba(0, 0, 253, 0.856) , rgba(0, 4, 236, 0.486)); */
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            border: 2px solid white;
+            align-items: center;
+            /* border-radius: 30px; */
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 2s;
+            animation-name: animatebottom;
+            animation-duration: 2s;
+        }
+
+        
+        @-webkit-keyframes animatebottom {
+        from { background-color:rgb(8, 71, 245); bottom:-500px; opacity:-1 } 
+        to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom { 
+        from{ background-color:rgb(8, 71, 245); bottom:-500px; opacity:0 } 
+        to{ bottom:0; opacity:1 }
+        }
+
+        h1{
+            font-size: 45px;
+        }
+
+        span{
+            padding: 30px;
+            font-size: 80px;
+        }
+
+        input[type=button]{
+            outline: none;
+            border: none;
+            background-color: rgba(0, 80, 253, 0.425);
+            color: white;
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            font-size: 20px;
+        }
+
+        input[type=button]:hover{
+            background-color: rgba(255, 255, 255, 0.733);
+            color: black;
+        }
+
+        footer{
+            color: black;
+            padding: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            position: absolute;
+            right: 0%;
+            bottom: 0px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .container {
+                width: 600px;
+                border-radius: 40px;
+            }
+
+            h1 {
+                font-size: 52px;
+            }
+
+            input[type=button]{
+                width: 110px;
+                height: 48px;
+                font-size: 28px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 450px;
+                border-radius: 40px;
+            }
+
+            input[type=button]{
+                width: 100px;
+                height: 42px;
+                font-size: 24px;
+            }
+
+            h1 {
+                font-size: 46px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .container {
+                width: 390px;
+                border-radius: 50px;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            input[type=button]{
+                width: 94px;
+                height: 40px;
+                font-size: 22px;
+            }
+
+            footer{
+                font-style: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .container {
+                width: 360px;
+                border-radius: 50px;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            input[type=button]{
+                width: 90px;
+                height: 36px;
+                font-size: 20px;
+            }
+
+            footer{
+                font-style: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 370px) {
+            .container {
+                width: 320px;
+            }
+
+            footer{
+                font-style: 15px;
+            }
+        }
