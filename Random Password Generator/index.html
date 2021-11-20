@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body oncontextmenu="return false;" onload="myFunction1()">
+<div class="loader" ></div>
+<div class="main">
+    <div class="container" >
+        <h1 class="shinee">Random Password Generator</h1>
+        <input type="text" name="pass" id="pass1" readonly><br>
+        <input type="range" id="length" min="8" max="28" value="8" oninput="genPassword()">
+        <h3 id="length-val">8</h3>
+        <div class="btn">
+            <img src="https://img.icons8.com/material-rounded/34/000000/lock--v1.png" alt="nisargop" style="filter:invert(1);"
+                onclick="genPassword()" />
+            <img src="https://img.icons8.com/material-rounded/34/000000/copy.png" alt="nisargop" style="filter:invert(1);"
+                onclick="copykarbc()" />
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+              <span>© Copyright Nisarg 2021.</span> <br>
+              <span>Design by <a class="effect-shine">Nisarg AKA [DrChamp]</a></span>	         	
+           </div>		                  
+    </footer>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
