@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%));
+}
+
+.main{
+  height: 400px;
+  width: 812px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  flex-direction: column;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { background-color:rgba(65, 64, 64, 0.5); bottom:-500px; opacity:-1 } 
+  to { bottom:0px; opacity:1 }
+  }
+
+  @keyframes animatebottom { 
+  from{ background-color:rgba(65, 64, 64, 0.5); bottom:-500px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+  }
+
+  
+.heading,.whichkey{
+  width: 100%;
+  text-align: center;
+}
+
+.phone{
+  display: none;
+}
+
+.cards{
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+footer{
+  color: black;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute; 
+  right: 0%;
+  bottom: 0px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .main{
+    display: none;
+  }
+
+  .phone{
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    display: contents;
+    text-align: center;
+  }
+
+}
+
