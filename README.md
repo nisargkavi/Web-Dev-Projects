@@ -1,7 +1,7 @@
 # Web-Dev-Projects
 
-##Some of Above Projects is Live
-###Check it Out!!
+## Some of Above Projects is Live
+### Check it Out!!
 
 Random Password Gen - https://champproject2.netlify.app/
 
